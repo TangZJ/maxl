@@ -102,8 +102,8 @@ trans_test = transforms.Compose([
 
 # load CIFAR-100 dataset with batch-size 100
 # set keyword download=True at the first time to download the dataset
-cifar100_train_set = CIFAR100(root='dataset', train=True, transform=trans_train, download=True)
-cifar100_test_set = CIFAR100(root='dataset', train=False, transform=trans_test, download=True)
+cifar100_train_set = CIFAR100(root='dataset', train=True, transform=trans_train, download=False)
+cifar100_test_set = CIFAR100(root='dataset', train=False, transform=trans_test, download=False)
 
 batch_size = 100
 kwargs = {'num_workers': 1, 'pin_memory': True}
